@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="en"> <!-- Inicia el documento HTML con idioma en inglés -->
+  <head> <!-- Sección de metadatos y configuración del documento -->
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <title>CatPhotoApp</title> <!-- Título que aparece en la pestaña del navegador -->
+  </head>
+  <body> <!-- Contenido visible de la página -->
+    <main> <!-- Contenedor principal del contenido -->
+      <h1>CatPhotoApp</h1> <!-- Título principal de la aplicación -->
+      
+      <!-- SECCIÓN DE FOTOS DE GATOS -->
+      <section>
+        <h2>Cat Photos</h2> <!-- Subtítulo para la sección de fotos -->
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+        </a> <!-- Imagen de un gato relajado con enlace -->
+      </section>
+      
+      <!-- SECCIÓN DE LISTAS RELACIONADAS CON GATOS -->
+      <section>
+        <h2>Cat Lists</h2> <!-- Subtítulo para las listas de cosas que aman u odian los gatos -->
+        
+        <!-- Cosas que aman los gatos -->
+        <h3>Things cats love:</h3>
+        <ul> <!-- Lista desordenada -->
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure> <!-- Imagen y descripción de lasaña -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        </figure>
+        
+        <!-- Cosas que odian los gatos -->
+        <h3>Top 3 things cats hate:</h3>
+        <ol> <!-- Lista ordenada -->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure> <!-- Imagen y descripción de gatos en un campo -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      
+      <!-- SECCIÓN DEL FORMULARIO -->
+      <section>
+        <h2>Cat Form</h2> <!-- Subtítulo para el formulario -->
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Formulario que envía datos -->
+          
+          <!-- Grupo de opciones: ¿Es tu gato de interior o exterior? -->
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          
+          <!-- Grupo de opciones: Personalidad del gato -->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked>
+            <label for="loving">Loving</label>
+            
+            <input id="lazy" type="checkbox" name="personality" value="lazy">
+            <label for="lazy">Lazy</label>
+            
+            <input id="energetic" type="checkbox" name="personality" value="energetic">
+            <label for="energetic">Energetic</label>
+          </fieldset>
+          
+          <!-- Campo de texto para ingresar una URL de foto -->
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button> <!-- Botón para enviar el formulario -->
+        </form>
+      </section>
+    </main>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </body>
+</html>
